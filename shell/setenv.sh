@@ -1,1 +1,1 @@
-JAVA_OPTS="$JAVA_OPTS -Dspring.profiles.active=product
+JAVA_OPTS="$JAVA_OPTS -Dspring.profiles.active=product"
