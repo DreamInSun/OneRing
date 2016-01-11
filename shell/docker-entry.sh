@@ -18,4 +18,4 @@ ls
 
 
 echo ========== Start Application ==========
-$CATALINA_BASE/bin/catalina.sh run
+#$CATALINA_BASE/bin/catalina.sh run
