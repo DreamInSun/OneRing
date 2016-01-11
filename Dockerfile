@@ -5,13 +5,7 @@ MAINTAINER "DreamInSun"
 
 
 #========== Environment ==========
-ENV CATALINA_BASE    /usr/local/tomcat
-ENV CATALINA_HOME    /usr/local/tomcat
-ENV CATALINA_TMPDIR  /usr/local/tomcat/temp
-ENV JRE_HOME         /usr
-ENV CLASSPATH        /usr/local/tomcat/bin/bootstrap.jar:/usr/local/tomcat/bin/tomcat-juli.jar
 
-ENV CONFIG_PATH      /usr/local/tomcat/conf/
 
 #========== Configuration ==========
 ENV MYSQL_CONN mysql://OneRing:OneRing@10.168.8.231:3306/OneRing
@@ -19,7 +13,7 @@ ENV MYSQL_CONN mysql://OneRing:OneRing@10.168.8.231:3306/OneRing
 
 #========== Install Application ==========
 WORKDIR /usr/local/tomcat
-ADD ./xdiamond  ./webapps
+ADD ./xdiamond  ./webapps/onering
 ADD ./shell/setenv.sh ./bin/ 
 
 WORKDIR /usr/local/tomcat/webapps
