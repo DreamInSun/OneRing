@@ -12,6 +12,10 @@ echo MySQL password is $MYSQL_USER
 echo Application Profile is $APP_PROFILE
 
 echo CATALINA_BASE is $CATALINA_BASE
+echo CATALINA_HOME is $CATALINA_HOME
+
+
+echo ==========  ==========
 cd $CATALINA_BASE
 ls
 
