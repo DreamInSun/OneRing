@@ -3,9 +3,6 @@
 From tomcat
 MAINTAINER "DreamInSun"
 
-#========== Install Application ==========
-ADD ./xdiamond  /opt/tomcat/webapps
-
 
 #========== Environment ==========
 ENV CATALINA_BASE    /usr/local/tomcat
@@ -22,6 +19,7 @@ ENV MYSQL_CONN mysql://OneRing:OneRing@10.168.8.231:3306/OneRing
 
 #========== Install Application ==========
 WORKDIR /usr/local/tomcat
+ADD ./xdiamond  ./webapps
 ADD ./shell/setenv.sh ./bin/ 
 
 WORKDIR /usr/local/tomcat/webapps
