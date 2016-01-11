@@ -15,14 +15,12 @@ echo CATALINA_HOME is $CATALINA_HOME
 
 echo Application Profile is $APP_PROFILE
 
-
 echo ========== Initialize Database ==========
 echo MySQL connection is $MYSQL_CONN
 
-
-echo ========== CATALINA_BASE ==========
-cd $CATALINA_BASE/webapps
-ls 
+echo ========== Database Config ==========
+cd $CATALINA_BASE/webapps/onering/WEB-INF/classes/config
+cat application.product.properties
 
 echo ========== Start Application ==========
 bash $CATALINA_BASE/bin/catalina.sh run
