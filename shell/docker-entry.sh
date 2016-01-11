@@ -22,7 +22,8 @@ echo ========== Database Config ==========
 cd $CATALINA_BASE/webapps/onering/WEB-INF/classes/config
 ls
 
-echo on
+echo ‘s/{XDIAMOND_JDBC_URL}/$XDIAMOND_JDBC_URL/g’
+
 sed -i ‘s/{XDIAMOND_JDBC_URL}/$XDIAMOND_JDBC_URL/g’           ./application.product.properties
 sed -i ‘s/{XDIAMOND_JDBC_USERNAME}/$XDIAMOND_JDBC_USERNAME/g’ ./application.product.properties
 sed -i ‘s/{XDIAMOND_JDBC_PASSWORD}/$XDIAMOND_JDBC_PASSWORD/g’ ./application.product.properties
@@ -31,7 +32,6 @@ sed -i ‘s/{XDIAMOND_LDAP_URL}/$XDIAMOND_LDAP_URL/g’           ./application.
 sed -i ‘s/{XDIAMOND_LDAP_USERDN}/$XDIAMOND_LDAP_USERDN/g’     ./application.product.properties
 sed -i ‘s/{XDIAMOND_LDAP_PASSWORD}/$XDIAMOND_LDAP_PASSWORD/g’ ./application.product.properties
 sed -i ‘s/{XDIAMOND_LDAP_BASE}/$XDIAMOND_LDAP_BASE/g’         ./application.product.properties
-echo off
 
 cat application.product.properties
 
