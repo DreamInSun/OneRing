@@ -1,10 +1,11 @@
-#========== Setup Evironment ==========
+#========== Set Up Environment ==========
 
 
-#========== Edit Config ==========
+#========== Edit Configuration ==========
 
 
-#========== Initializa Database ==========
+#========== Initialize Database ==========
 
 
 #========== Start Application ==========
+/opt/tomcat/bin/startup.sh
