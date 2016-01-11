@@ -24,6 +24,5 @@ echo ========== CATALINA_BASE ==========
 cd $CATALINA_BASE/webapps
 ls 
 
-
 echo ========== Start Application ==========
-#$CATALINA_BASE/bin/catalina.sh run
+bash $CATALINA_BASE/bin/catalina.sh run
