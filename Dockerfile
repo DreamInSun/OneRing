@@ -8,9 +8,7 @@ MAINTAINER "DreamInSun"
 
 
 #========== Configuration ==========
-#ENV XDIAMOND_JDBC_URL jdbc\:mysql\://10.168.8.231\:3306/OneRing?useUnicode\=true&characterEncoding\=utf-8&zeroDateTimeBehavior\=convertToNull
-ENV XDIAMOND_JDBC_URL jdbc:mysql://10.168.8.231:3306/OneRing?useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull
-
+ENV XDIAMOND_JDBC_URL jdbc\:mysql\://10.168.8.231\:3306/OneRing?useUnicode\=true&characterEncoding\=utf-8&zeroDateTimeBehavior\=convertToNull
 ENV XDIAMOND_JDBC_USERNAME OneRing
 ENV XDIAMOND_JDBC_PASSWORD OneRing
 

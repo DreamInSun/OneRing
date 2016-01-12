@@ -22,8 +22,8 @@ echo ========== Initialize Database ==========
 echo ========== Database Configuration ==========
 cd $CATALINA_BASE/webapps/onering/WEB-INF/classes/config
 
-echo XDIAMOND_JDBC_URL
-sed -i "s/{XDIAMOND_JDBC_URL}/$XDIAMOND_JDBC_URL/g"           ./application.product.properties
+echo XDIAMOND_JDBC_URL = $XDIAMOND_JDBC_URL
+sed -i 's/{XDIAMOND_JDBC_URL}/"$XDIAMOND_JDBC_URL"/g'           ./application.product.properties
 echo XDIAMOND_JDBC_USERNAME
 sed -i "s/{XDIAMOND_JDBC_USERNAME}/$XDIAMOND_JDBC_USERNAME/g" ./application.product.properties
 echo XDIAMOND_JDBC_PASSWORD
