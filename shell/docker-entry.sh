@@ -29,8 +29,8 @@ sed -i "s#{XDIAMOND_JDBC_PASSWORD}#'"$XDIAMOND_JDBC_PASSWORD"'#g' ./application.
 
 sed -i "s#{XDIAMOND_LDAP_URL}#'"$XDIAMOND_LDAP_URL"'#g'           ./application.product.properties
 sed -i "s#{XDIAMOND_LDAP_USERDN}#'"$XDIAMOND_LDAP_USERDN"'#g'     ./application.product.properties
-sed -i "s#{XDIAMOND_LDAP_PASSWORD}#'"$XDIAMOND_LDAP_PASSWORD#g"'#g' ./application.product.properties
-sed -i "s#{XDIAMOND_LDAP_BASE}#'"$XDIAMOND_LDAP_BASE#g"'#g'         ./application.product.properties
+sed -i "s#{XDIAMOND_LDAP_PASSWORD}#'"$XDIAMOND_LDAP_PASSWORD"'#g' ./application.product.properties
+sed -i "s#{XDIAMOND_LDAP_BASE}#'"$XDIAMOND_LDAP_BASE"'#g'         ./application.product.properties
 
 
 echo ========== Product Configuration ==========
