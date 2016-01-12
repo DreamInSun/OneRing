@@ -22,12 +22,13 @@ echo ========== Initialize Database ==========
 echo ========== Database Configuration ==========
 cd $CATALINA_BASE/webapps/onering/WEB-INF/classes/config
 
-sed -i "s#{XDIAMOND_JDBC_URL}#$XDIAMOND_JDBC_URL#g"           ./application.product.properties
-sed -i "s#{XDIAMOND_JDBC_USERNAME}#$XDIAMOND_JDBC_USERNAME#g" ./application.product.properties
-sed -i "s#{XDIAMOND_JDBC_PASSWORD}#$XDIAMOND_JDBC_PASSWORD#g" ./application.product.properties
+echo XDIAMOND_JDBC_URL = $XDIAMOND_JDBC_URL
+sed -i "s#{XDIAMOND_JDBC_URL}#$XDIAMOND_JDBC_URL"           ./application.product.properties
+sed -i "s#{XDIAMOND_JDBC_USERNAME}#$XDIAMOND_JDBC_USERNAME" ./application.product.properties
+sed -i "s#{XDIAMOND_JDBC_PASSWORD}#$XDIAMOND_JDBC_PASSWORD" ./application.product.properties
 
-sed -i "s#{XDIAMOND_LDAP_URL}#$XDIAMOND_LDAP_URL#g"           ./application.product.properties
-sed -i "s#{XDIAMOND_LDAP_USERDN}#$XDIAMOND_LDAP_USERDN#g"     ./application.product.properties
+sed -i "s#{XDIAMOND_LDAP_URL}#$XDIAMOND_LDAP_URL"           ./application.product.properties
+sed -i "s#{XDIAMOND_LDAP_USERDN}#$XDIAMOND_LDAP_USERDN"     ./application.product.properties
 sed -i "s#{XDIAMOND_LDAP_PASSWORD}#$XDIAMOND_LDAP_PASSWORD#g" ./application.product.properties
 sed -i "s#{XDIAMOND_LDAP_BASE}#$XDIAMOND_LDAP_BASE#g"         ./application.product.properties
 
