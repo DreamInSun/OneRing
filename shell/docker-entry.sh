@@ -40,4 +40,4 @@ cat application.product.properties
 
 
 echo ========== Start Application ==========
-#bash $CATALINA_BASE/bin/catalina.sh run
+bash $CATALINA_BASE/bin/catalina.sh run
