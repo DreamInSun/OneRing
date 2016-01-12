@@ -26,10 +26,10 @@ EXPOSE 5678
 
 
 #========= RUN ==========
-
+ADD ./shell/docker-entry.sh /
+RUN chmod a+x /docker-entry.sh
 
 #========= Start Service ==========
-ADD ./shell/docker-entry.sh / 
 ENTRYPOINT ["/docker-entry.sh"]
 
 #CMD ["catalina.sh", "run"]
