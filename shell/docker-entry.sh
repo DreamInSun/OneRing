@@ -29,6 +29,8 @@ sed -i "s#{XDIAMOND_JDBC_URL}#$TEMP_XDIAMOND_JDBC_URL#g"           ./application
 sed -i "s#{XDIAMOND_JDBC_USERNAME}#$XDIAMOND_JDBC_USERNAME#g" ./application.product.properties
 sed -i "s#{XDIAMOND_JDBC_PASSWORD}#$XDIAMOND_JDBC_PASSWORD#g" ./application.product.properties
 
+echo XDIAMOND_LDAP_URL=$XDIAMOND_LDAP_URL
+TEMP_XDIAMOND_LDAP_URL=` echo $XDIAMOND_JDBC_URL | sed 's#\/#\\\/#g' | sed 's#\?#\\\?#g' | sed 's#\&#\\\&#g' | sed 's#\:#\\\:#g' `
 sed -i "s#{XDIAMOND_LDAP_URL}#$XDIAMOND_LDAP_URL#g"           ./application.product.properties
 sed -i "s#{XDIAMOND_LDAP_USERDN}#$XDIAMOND_LDAP_USERDN#g"     ./application.product.properties
 sed -i "s#{XDIAMOND_LDAP_PASSWORD}#$XDIAMOND_LDAP_PASSWORD#g" ./application.product.properties
