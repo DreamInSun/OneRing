@@ -20,7 +20,7 @@ echo ========== Initialize Database ==========
 
 
 echo ========== Database Configuration ==========
-cd $CATALINA_BASE/webapps/onering/WEB-INF/classes/config
+cd $CATALINA_BASE/webapps/xdiamond/WEB-INF/classes/config
 
 echo XDIAMOND_JDBC_URL=$XDIAMOND_JDBC_URL
 TEMP_XDIAMOND_JDBC_URL=` echo $XDIAMOND_JDBC_URL | sed 's#\/#\\\/#g' | sed 's#\?#\\\?#g' | sed 's#\&#\\\&#g' | sed 's#\:#\\\:#g' `
