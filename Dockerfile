@@ -17,7 +17,7 @@ ENV XDIAMOND_LDAP_BASE 'ou=People,dc=17orange,dc=com'
 
 #========== Install Application ==========
 WORKDIR /usr/local/tomcat
-ADD ./xdiamond  ./webapps/onering
+ADD ./xdiamond  ./webapps/xdiamond
 ADD ./shell/setenv.sh ./bin/ 
 
 #========== Expose Ports ==========
