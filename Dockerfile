@@ -24,12 +24,10 @@ ADD ./shell/setenv.sh ./bin/
 EXPOSE 8080
 EXPOSE 5678
 
-
 #========= RUN ==========
-ADD ./shell/docker-entry.sh /
-RUN chmod a+x /docker-entry.sh
+ADD shell /shell
+RUN chmod a+x /shell/*
 
 #========= Start Service ==========
-ENTRYPOINT ["/docker-entry.sh"]
-
+ENTRYPOINT ["/shell/docker-entrypoint.sh"] 
 #CMD ["catalina.sh", "run"]
