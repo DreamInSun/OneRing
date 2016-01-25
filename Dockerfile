@@ -1,6 +1,6 @@
 # Version 1.0.0
 #========== Basic Image ==========
-From tomcat
+From daocloud.io/yancy_chen/tomcat
 MAINTAINER "DreamInSun"
 
 #========== Environment ==========
