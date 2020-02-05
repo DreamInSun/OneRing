@@ -19,7 +19,7 @@
         <swagger-springmvc.version>0.9.5</swagger-springmvc.version>
         <dropwizard-metrics.version>3.1.1</dropwizard-metrics.version>
         <metrics-spring.version>3.1.0</metrics-spring.version>
-        <shiro.version>1.2.3</shiro.version>
+        <shiro.version>1.5.0</shiro.version>
     </properties>
 
     <!--======================================================-->
